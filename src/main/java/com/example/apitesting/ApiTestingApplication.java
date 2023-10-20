@@ -18,7 +18,7 @@ public class ApiTestingApplication {
 		SpringApplication.run(ApiTestingApplication.class, args);
 	}
 	
-	@GetMapping("getApiKey2")
+	@GetMapping("getApiKey")
 	public String getApiHeader(HttpServletRequest request)
 	{
 		Iterator<String> headers = request.getHeaderNames().asIterator();
