@@ -1,6 +1,0 @@
-com\example\apitesting\util\AuthenticationUtil.class
-com\example\apitesting\api\RapidApiController.class
-com\example\apitesting\domain\RapidApiUser.class
-com\example\apitesting\repository\RapidApiUserRepository.class
-com\example\apitesting\domain\NewClass.class
-com\example\apitesting\ApiTestingApplication.class
