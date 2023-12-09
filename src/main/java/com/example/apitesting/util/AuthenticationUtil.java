@@ -19,8 +19,9 @@ public class AuthenticationUtil {
     {
         try{
             String username = request.getHeader("x-rapidapi-user");
+            System.out.println(request.getHeader("host"));
 
-            if (!request.getHeader("x-rapidapi-host").equalsIgnoreCase("ezyhire.p.rapidapi.com")  || ObjectUtils.isEmpty(username))
+            if (!request.getHeader("host").equalsIgnoreCase("ezyhire.p.rapidapi.com")  || ObjectUtils.isEmpty(username))
                 return false;
 
             RapidApiUser user = repo.findByUsername(username).orElse(null);
